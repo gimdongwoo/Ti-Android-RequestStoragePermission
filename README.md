@@ -18,6 +18,7 @@ from Titanium SDK
 https://github.com/appcelerator/titanium_mobile/blob/5_2_X/android/modules/media/src/java/ti/modules/titanium/media/MediaModule.java
 
 ## Usage
+It's work on controller after window opend. (not alloy.js)
 
 	// request storage permission
 	if (OS_ANDROID) {
