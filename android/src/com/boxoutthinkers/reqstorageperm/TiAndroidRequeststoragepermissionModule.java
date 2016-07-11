@@ -19,8 +19,12 @@ import org.appcelerator.kroll.common.TiConfig;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
+import android.provider.Settings;
 
 @Kroll.module(name="TiAndroidRequeststoragepermission", id="com.boxoutthinkers.reqstorageperm")
 public class TiAndroidRequeststoragepermissionModule extends KrollModule
@@ -76,6 +80,20 @@ public class TiAndroidRequeststoragepermissionModule extends KrollModule
 		Activity currentActivity = TiApplication.getInstance().getCurrentActivity();		
 		currentActivity.requestPermissions(permissions, TiC.PERMISSION_CODE_CAMERA);
 		
+	}
+	
+	@Kroll.method
+	private void settingsOpen() {
+	    if (Build.VERSION.SDK_INT < 23) {
+	        return;
+	    }
+	    Context context = TiApplication.getInstance().getApplicationContext();
+	    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.fromParts("package", context.getPackageName(), null));
+    	intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//    	context.startActivity(intent);
+    	Activity activity = TiApplication.getAppRootOrCurrentActivity();
+    	activity.startActivity(intent);
+    	return;
 	}
 
 //	// Properties

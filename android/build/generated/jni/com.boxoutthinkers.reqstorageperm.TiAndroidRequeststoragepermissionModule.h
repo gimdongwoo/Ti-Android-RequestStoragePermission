@@ -32,6 +32,7 @@ private:
 	// Methods -----------------------------------------------------------
 	static v8::Handle<v8::Value> requestStoragePermissions(const v8::Arguments&);
 	static v8::Handle<v8::Value> hasStoragePermission(const v8::Arguments&);
+	static v8::Handle<v8::Value> settingsOpen(const v8::Arguments&);
 
 	// Dynamic property accessors ----------------------------------------
 

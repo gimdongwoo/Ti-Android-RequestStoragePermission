@@ -91,6 +91,7 @@ Handle<FunctionTemplate> TiAndroidRequeststoragepermissionModule::getProxyTempla
 	// Method bindings --------------------------------------------------------
 	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "requestStoragePermissions", TiAndroidRequeststoragepermissionModule::requestStoragePermissions);
 	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "hasStoragePermission", TiAndroidRequeststoragepermissionModule::hasStoragePermission);
+	DEFINE_PROTOTYPE_METHOD(proxyTemplate, "settingsOpen", TiAndroidRequeststoragepermissionModule::settingsOpen);
 
 	Local<ObjectTemplate> prototypeTemplate = proxyTemplate->PrototypeTemplate();
 	Local<ObjectTemplate> instanceTemplate = proxyTemplate->InstanceTemplate();
@@ -222,6 +223,49 @@ Handle<Value> TiAndroidRequeststoragepermissionModule::hasStoragePermission(cons
 
 
 	return v8Result;
+
+}
+Handle<Value> TiAndroidRequeststoragepermissionModule::settingsOpen(const Arguments& args)
+{
+	LOGD(TAG, "settingsOpen()");
+	HandleScope scope;
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		return titanium::JSException::GetJNIEnvironmentError();
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(TiAndroidRequeststoragepermissionModule::javaClass, "settingsOpen", "()V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'settingsOpen' with signature '()V'";
+			LOGE(TAG, error);
+				return titanium::JSException::Error(error);
+		}
+	}
+
+	titanium::Proxy* proxy = titanium::Proxy::unwrap(args.Holder());
+
+	jvalue* jArguments = 0;
+
+	jobject javaProxy = proxy->getJavaObject();
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	if (!JavaObject::useGlobalRefs) {
+		env->DeleteLocalRef(javaProxy);
+	}
+
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException();
+		env->ExceptionClear();
+	}
+
+
+
+
+	return v8::Undefined();
 
 }
 
