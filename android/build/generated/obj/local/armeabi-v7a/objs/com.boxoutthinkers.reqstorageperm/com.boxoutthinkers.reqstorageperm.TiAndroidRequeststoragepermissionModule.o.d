@@ -4,14 +4,14 @@
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/Proxy.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/v8.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/v8stdint.h \
- /Users/InGrowth/Library/android-sdk-macosx/ndk-bundle/sources/cxx-stl/stlport/stlport/stddef.h \
- /Users/InGrowth/Library/android-sdk-macosx/ndk-bundle/sources/cxx-stl/stlport/stlport/stdio.h \
+ /Users/InGrowth/android-ndk-r11c/sources/cxx-stl/stlport/stlport/stddef.h \
+ /Users/InGrowth/android-ndk-r11c/sources/cxx-stl/stlport/stlport/stdio.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/JavaObject.h \
- /Users/InGrowth/Library/android-sdk-macosx/ndk-bundle/sources/cxx-stl/stlport/stlport/assert.h \
+ /Users/InGrowth/android-ndk-r11c/sources/cxx-stl/stlport/stlport/assert.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/EventEmitter.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/NativeObject.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/AndroidUtil.h \
- /Users/InGrowth/Library/android-sdk-macosx/ndk-bundle/sources/cxx-stl/stlport/stlport/stdlib.h \
+ /Users/InGrowth/android-ndk-r11c/sources/cxx-stl/stlport/stlport/stdlib.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/EventEmitter.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/JNIUtil.h \
  /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/AndroidUtil.h \
@@ -30,13 +30,13 @@ jni/com.boxoutthinkers.reqstorageperm.TiAndroidRequeststoragepermissionModule.h:
 
 /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/v8stdint.h:
 
-/Users/InGrowth/Library/android-sdk-macosx/ndk-bundle/sources/cxx-stl/stlport/stlport/stddef.h:
+/Users/InGrowth/android-ndk-r11c/sources/cxx-stl/stlport/stlport/stddef.h:
 
-/Users/InGrowth/Library/android-sdk-macosx/ndk-bundle/sources/cxx-stl/stlport/stlport/stdio.h:
+/Users/InGrowth/android-ndk-r11c/sources/cxx-stl/stlport/stlport/stdio.h:
 
 /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/JavaObject.h:
 
-/Users/InGrowth/Library/android-sdk-macosx/ndk-bundle/sources/cxx-stl/stlport/stlport/assert.h:
+/Users/InGrowth/android-ndk-r11c/sources/cxx-stl/stlport/stlport/assert.h:
 
 /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/EventEmitter.h:
 
@@ -44,7 +44,7 @@ jni/com.boxoutthinkers.reqstorageperm.TiAndroidRequeststoragepermissionModule.h:
 
 /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/AndroidUtil.h:
 
-/Users/InGrowth/Library/android-sdk-macosx/ndk-bundle/sources/cxx-stl/stlport/stlport/stdlib.h:
+/Users/InGrowth/android-ndk-r11c/sources/cxx-stl/stlport/stlport/stdlib.h:
 
 /Users/InGrowth/Library/Application\ Support/Titanium/mobilesdk/osx/5.1.0.GA/android/native/include/EventEmitter.h:
 
