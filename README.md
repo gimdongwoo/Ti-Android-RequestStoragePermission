@@ -2,7 +2,9 @@
 
 ## Description
 
-for Titanium SDK 5.1.0+ & Android 6.0+
+for Titanium SDK 5.1.0 ~ 5.3.1.GA & Android 6.0+
+
+( After 5.4.0, use Ti.FileSystem.requestStoragePermissions() )
 
 ## Accessing the ti-android-requeststoragepermission Module
 
