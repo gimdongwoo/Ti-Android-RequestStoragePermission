@@ -33,6 +33,7 @@ public class TiAndroidRequeststoragepermissionModule extends KrollModule
 	// Standard Debugging variables
 	private static final String LCAT = "TiAndroidRequeststoragepermissionModule";
 	private static final boolean DBG = TiConfig.LOGD;
+	private static final int REQUEST_CODE = 998;
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
@@ -68,18 +69,13 @@ public class TiAndroidRequeststoragepermissionModule extends KrollModule
 		if (hasStoragePermission()) {
 			return;
 		}
-
-		if (TiBaseActivity.cameraCallbackContext == null) {
-			TiBaseActivity.cameraCallbackContext = getKrollObject();
-		}
-		TiBaseActivity.cameraPermissionCallback = permissionCallback;
+		
 		String[] permissions = null;
 		permissions = new String[] {Manifest.permission.READ_EXTERNAL_STORAGE};
 		
-
-		Activity currentActivity = TiApplication.getInstance().getCurrentActivity();		
-		currentActivity.requestPermissions(permissions, TiC.PERMISSION_CODE_CAMERA);
-		
+		Activity currentActivity  = TiApplication.getInstance().getCurrentActivity();
+		TiBaseActivity.registerPermissionRequestCallback(REQUEST_CODE, permissionCallback, getKrollObject());
+		currentActivity.requestPermissions(permissions, REQUEST_CODE);
 	}
 	
 	@Kroll.method

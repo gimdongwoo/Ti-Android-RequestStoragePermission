@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.1.2
+version: 0.2.0
 apiversion: 2
 architectures: armeabi armeabi-v7a x86
 description: ti-android-requeststoragepermission
@@ -15,4 +15,4 @@ name: ti-android-requeststoragepermission
 moduleid: com.boxoutthinkers.reqstorageperm
 guid: ce7a80a6-c6c4-47c4-bc5a-9057dc4bfa35
 platform: android
-minsdk: 5.1.0.GA
+minsdk: 5.4.0.GA
