@@ -6,6 +6,7 @@ for Titanium SDK 5.1.0.GA+ & Android 6.0+
 
 - After 5.4.0, can use Ti.FileSystem.hasStoragePermissions/requestStoragePermissions()
 - But, settingsOpen() is still useful.
+- v0.2.0 for Ti SDK 5.4.0.GA+ / v0.1.2 for Ti SDK 5.1.0.GA~5.3.1.GA
 
 ## Accessing the ti-android-requeststoragepermission Module
 
